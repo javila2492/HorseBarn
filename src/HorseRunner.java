@@ -11,12 +11,24 @@ public class HorseRunner {
         horses[5] = horse3;
         HorseBarn barn = new HorseBarn(horses);
 
-        System.out.println(barn);
+        for(int i = 0; i < barn.spaces.length; i++ )
+        {
+            if(barn.spaces[i] == null)
+                System.out.println("Empty");
+            else
+                System.out.println("Name: " + barn.spaces[i].getName() + ", Weight: " + barn.spaces[i].getWeight());
+        }
         System.out.println("Dusty Trail is in space: " + barn.findHorseSpace("Dusty Trail"));
 
         barn.consolidate();
 
-        System.out.println(barn);
+        for(int i = 0; i < barn.spaces.length; i++ )
+        {
+            if(barn.spaces[i] == null)
+                System.out.println("Empty");
+            else
+                System.out.println("Name: " + barn.spaces[i].getName() + ", Weight: " + barn.spaces[i].getWeight());
+        }
         System.out.println("Dusty Trail is now in space: " + barn.findHorseSpace("Dusty Trail"));
     }
 }
