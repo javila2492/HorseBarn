@@ -13,10 +13,14 @@ public class HorseRunner {
 
         for(int i = 0; i < barn.spaces.length; i++ )
         {
+            if(i == 0)
+                System.out.println("Barn: ");
             if(barn.spaces[i] == null)
                 System.out.println("Empty");
             else
                 System.out.println("Name: " + barn.spaces[i].getName() + ", Weight: " + barn.spaces[i].getWeight());
+            if(i == barn.spaces.length - 1)
+                System.out.println("End of Barn");
         }
         System.out.println("Dusty Trail is in space: " + barn.findHorseSpace("Dusty Trail"));
 
@@ -24,10 +28,14 @@ public class HorseRunner {
 
         for(int i = 0; i < barn.spaces.length; i++ )
         {
+            if(i == 0)
+                System.out.println("Barn: ");
             if(barn.spaces[i] == null)
                 System.out.println("Empty");
             else
                 System.out.println("Name: " + barn.spaces[i].getName() + ", Weight: " + barn.spaces[i].getWeight());
+            if(i == barn.spaces.length - 1)
+                System.out.println("End of Barn");
         }
         System.out.println("Dusty Trail is now in space: " + barn.findHorseSpace("Dusty Trail"));
     }

@@ -4,7 +4,6 @@ public class HorseBarn
     public HorseBarn(Horse[] spaces)
     {
         this.spaces = spaces;
-        System.out.println(spaces);
     }
 
     public int findHorseSpace(String name)
